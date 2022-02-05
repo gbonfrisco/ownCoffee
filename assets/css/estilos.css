@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "lato", sans-serif;
+}
+/* Estilos generales */
+.letraChico {
+  font-size: 12px;
+}
+.encabezado {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+ul li a {
+  color: rgb(124, 66, 18);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h2 {
+  padding: 10px;
+}
+h3 {
+  padding: 10px;
+}
+
+body {
+  height: 100vh;
+}
+
+/* NOMBRO LAS AREAS */
+
+header {
+  grid-area: header;
+}
+nav {
+  grid-area: menu;
+  padding: 10px;
+}
+.seccionQueEsCafe {
+  grid-area: queEsCafe;
+  background-color: rgb(244, 243, 243);
+  padding: 10px;
+}
+.seccionElaboracion {
+  grid-area: elaboracion;
+  background-color: rgb(244, 243, 243);
+  padding: 10px;
+}
+footer {
+  grid-area: footer;
+  padding: 10px;
+  background-color: rgb(224, 192, 169);
+  color: rgb(124, 66, 18);
+  font-weight: bold;
+}
+.productos {
+  grid-area: productos;
+  background-color: rgb(244, 243, 243);
+  padding: 10px;
+}
+.nosotros {
+  grid-area: nosotros;
+  background-color: rgb(244, 243, 243);
+  padding: 10px;
+}
+.contacto{
+  grid-area: contacto;
+  background-color: rgb(244, 243, 243);
+  padding: 10px;
+}
+.formulario{
+  grid-area: formulario;
+  background-color: rgb(244, 243, 243);
+  padding: 10px;
+}
+.main {
+  grid-area: main;
+  background-color: rgb(244, 243, 243);
+  padding: 10px;
+}
+
+/* FULL RESPONSIVE */
+
+/******** SMARTPHONE **********/
+
+@media (max-width: 480px) {
+  /***************** GRIDS *************/
+  #gridAreaIndex {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 5 filas */
+      "header"
+      "menu"
+      "queEsCafe"
+      "elaboracion"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  #gridAreaProducto {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "productos"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 4fr 1fr;
+  }
+  #gridAreaNosotros {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "nosotros"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  #gridAreaContacto {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 5 filas */
+      "header"
+      "menu"
+      "contacto"
+      "formulario"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  #gridAreaHistoria {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "main"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  /************* FLEX BOX *********************/
+  .logoFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+  .menuFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .seccionProductoFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+  }
+  .articleFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .footerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .seccionFlex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .mainProducto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* padding: 0px 200px 200px 200px; */
+  }
+  .asideFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    }
+  /* ******************************************** */
+  .imagen {
+    width: 250px;
+    height: 250px;
+  }
+  .imagenAnchoOk{
+    width: 100%;
+  }
+  .imagenProductoOk{
+    width: 100%;
+  }
+  .imagenHistoria{
+    width: 100%;
+    max-width: 500px;
+  }
+  ul li {
+    border: 2px;
+    text-align: center;
+    padding: 5px 0;
+  }
+  .videoAnchoAltoOk{
+    width: 100%;
+    height: 30%;
+  }
+  .pIndex {
+    padding: 5px;
+  }
+  .pProducto {
+    padding: 5px;
+  }
+  .pHistoria{
+    width: 700px;
+    padding: 5px;
+}
+  .inputProducto {
+    /* position: absolute; */
+    bottom: 5px;
+  }
+  .formResponsive{
+    text-align: center;
+  }
+  .inputContacto{
+    width: 100%;
+    max-width: 180px;
+  }
+}
+/******** TABLET ******/
+@media (min-width: 481px) and (max-width: 1023px) {
+  /******************* GRIDS *************************/
+  #gridAreaIndex {
+    display: grid;
+    /* grid por areas */
+    grid-template-areas:
+        /* 1 columnas y 6 filas */
+      "header"
+      "menu"
+      "queEsCafe"
+      "elaboracion"
+      "footer";
+    /* Dimensiones */
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
+  }
+  #gridAreaProducto {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "productos"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 10vh 100vh 10vh;
+  }
+  #gridAreaNosotros {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "nosotros"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  #gridAreaContacto {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "contacto"
+      "formulario"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 10vh 10vh 60vh 10vh;
+  }
+  #gridAreaHistoria {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "main"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  /***********************************************/
+  .logoFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menuFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .seccionFlex {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    padding: 0px 50px;
+  }
+  .footerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .seccionProductoFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 0px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .articleFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .asideFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    }
+  /*************************************************/
+  .imagen {
+    width: 250px;
+    height: 250px;
+  }
+  .imagenAnchoOk{
+    width: 100%;
+  }
+  .imagenProductoOk{
+    width: 250px;
+    height: 200px;
+  }
+  .videoAnchoAltoOk{
+    width: 100%;
+    height: 30vh;
+  }
+  .imagenHistoria{
+    width: 100%;
+  }
+
+  .pIndex {
+    /* width: 560px; */
+    padding: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+    width: 120px;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .pProducto {
+    width: 250px;
+    padding: 5px;
+  }
+  .pHistoria{
+    padding: 5px;
+}
+  .inputProducto {
+    /* position: absolute; */
+    bottom: 5px;
+  }
+  .pAboutAs{
+    /* width: 600px; */
+    padding: 5px;
+}
+.formResponsive{
+  text-align: center;
+}
+}
+
+/******** DESKTOP ******/
+@media (min-width: 1024px) {
+  /******************* GRIDS *************************/
+  #gridAreaIndex {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 6 filas */
+      "header"
+      "menu"
+      "queEsCafe"
+      "elaboracion"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
+  }
+  #gridAreaProducto {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "productos"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 30vh 10vh 50vh 10vh;
+  }
+  #gridAreaNosotros {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "nosotros"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  #gridAreaContacto {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header header"
+      "menu menu"
+      "contacto formulario"
+      "footer footer";
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 30vh 10vh 60vh 10vh;
+  }
+  #gridAreaHistoria {
+    display: grid;
+    grid-template-areas:
+    /* 1 columnas y 4 filas */
+      "header"
+      "menu"
+      "main"
+      "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  /******************* FLEX BOX *********************/
+  .logoFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .menuFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .seccionFlex {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-wrap: wrap; */
+    text-align: center;
+    padding: 0px 100px;
+  }
+  .footerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  .seccionProductoFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 0px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .articleFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .asideFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    }
+
+  /*************************************************/
+  .imagen {
+    width: 250px;
+    height: 250px;
+  }
+  .imagenProductoOk{
+    width: 250px;
+    height: 200px;
+  }
+  .imagenHistoria{
+    width: 100%;
+    max-width: 700px;
+  }
+  .imagenAnchoOk{
+    width: 900px;
+    height: 600px;
+  }
+  .videoAnchoAltoOk{
+    width: 50%;
+    height: 30vh;
+  }
+
+  .pIndex {
+    width: 560px;
+    padding: 5px;
+  }
+
+  ul li {
+    list-style-type: none;
+    width: 120px;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .pProducto {
+    width: 250px;
+    padding: 5px;
+  }
+  .pHistoria{
+    padding: 5px;
+    max-width: 700px;
+}
+  .pAboutAs {
+    /* width: 600px; */
+    padding: 5px 10%;
+  }
+  .inputProducto {
+    position: absolute;
+    bottom: 5px;
+  }
+  .formResponsive{
+    padding: 10px 100px;
+  }
+}
+
+/* TABLET */
