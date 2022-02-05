@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "lato", sans-serif;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  transition: .2s linear;
+  
 }
 /* Estilos generales */
 .letraChico {
@@ -13,11 +18,28 @@
   text-align: center;
   padding: 5px;
 }
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 10px;
+  font-size: 1rem;
+  color:#fff;
+  background: #d3ad7f;
+  cursor: pointer;
+}
+.btn:hover{
+  letter-spacing: .2rem;
+}
 
 ul li a {
   color: rgb(124, 66, 18);
   text-decoration: none;
   font-weight: bold;
+
+}
+ul li a:hover {
+  border-bottom: .15rem solid rgb(124, 66, 18);
+  padding-bottom: 0.2rem;
 }
 
 h2 {
@@ -211,9 +233,9 @@ footer {
   .imagenAnchoOk{
     width: 100%;
   }
-  .imagenProductoOk{
+  /* .imagenProductoOk{
     width: 100%;
-  }
+  } */
   .imagenHistoria{
     width: 100%;
     max-width: 500px;
@@ -368,10 +390,10 @@ footer {
   .imagenAnchoOk{
     width: 100%;
   }
-  .imagenProductoOk{
+  /* .imagenProductoOk{
     width: 250px;
     height: 200px;
-  }
+  } */
   .videoAnchoAltoOk{
     width: 100%;
     height: 30vh;
@@ -475,7 +497,13 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
   }
+  .logoFlex:hover {
+   transform: scale(1.2,1.2);
+    
+  }
+
   .menuFlex {
     display: flex;
     flex-direction: row;
@@ -500,11 +528,11 @@ footer {
   .seccionProductoFlex {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 30px 0px;
     align-items: flex-start;
     flex-wrap: wrap;
-    position: relative;
+    /* position: relative; */
   }
   .articleFlex {
     display: flex;
@@ -526,8 +554,7 @@ footer {
     height: 250px;
   }
   .imagenProductoOk{
-    width: 250px;
-    height: 200px;
+    padding: 5px ;
   }
   .imagenHistoria{
     width: 100%;
@@ -566,7 +593,8 @@ footer {
     padding: 5px 10%;
   }
   .inputProducto {
-    position: absolute;
+    /* position: absolute; */
+    padding: 0 20px;
     bottom: 5px;
   }
   .formResponsive{
