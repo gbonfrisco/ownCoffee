@@ -11,12 +11,25 @@
 header {
   height: 30vh;
 }
-
+.colorPropio {
+  color: brown;
+}
+ul li a{
+  color:black!Important;
+  
+}
+ul li a:hover{
+  color: #d3ad7f !Important;
+}
+.imgLogo {
+  width: 250px;
+  height: 250px;
+}
 /* main div div img{
   width: 150px;
   height: 150px;
 } */
-.btn {
+.boton {
   margin-top: 1rem;
   display: inline-block;
   padding: 0.9rem 3rem;
@@ -24,9 +37,14 @@ header {
   color: #d3ad7f;
   background: white;
   cursor: pointer;
+  border-radius: 0.25rem;
+  
 }
-.btn:hover {
+.boton:hover {
   letter-spacing: 0.2rem;
+}
+.boton-texto{
+  text-decoration: none;
 }
 
 .productos {
@@ -41,9 +59,13 @@ header {
   text-align: center;
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
   padding: 2rem;
+
 }
 .productos .grid-container .box .imagen {
   padding: 2.5rem 0;
+}
+.productos .grid-container .box .imagen img {
+  height: 15rem;
 }
 .productos .grid-container .box .contenido h3 {
   color: white;
