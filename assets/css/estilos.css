@@ -1,11 +1,12 @@
 * {
-  transition: 0.2s linear;
+  
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
   border: none;
   text-decoration: none;
+  transition: 0.2s linear;
 }
 header {
   height: 30vh;
