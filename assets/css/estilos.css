@@ -8,9 +8,9 @@
   text-decoration: none;
   transition: 0.2s linear;
 }
-header {
+/* header {
   height: 30vh;
-}
+} */
 .colorPropio {
   color: brown;
 }
@@ -50,11 +50,7 @@ ul li a:hover{
 .productos {
   padding: 2rem 7%;
 }
-.productos .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  gap: 1.5rem;
-}
+
 .productos .grid-container .box {
   text-align: center;
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
@@ -72,3 +68,19 @@ ul li a:hover{
   font-size: 1.5rem;
   font: bold;
 }
+
+
+
+
+@media (min-width: 551px){
+  .productos .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 550px){
+
+
+}
+
