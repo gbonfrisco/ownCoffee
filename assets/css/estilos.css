@@ -12,13 +12,16 @@
   height: 30vh;
 } */
 .colorPropio {
-  color: brown;
+  color: #d3ad7f;
 }
 ul li a{
   color:black!Important;
   
 }
-ul li a:hover{
+ul a{
+  font-size: 1.1rem;
+}
+ul a:hover{
   color: #d3ad7f !Important;
 }
 .imgLogo {
@@ -40,6 +43,14 @@ ul li a:hover{
   border-radius: 0.25rem;
   
 }
+.bordeRojo{
+  border: 2px solid red;
+}
+.fondoContacto{
+  background:url(../img/home-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .boton:hover {
   letter-spacing: 0.2rem;
 }
@@ -50,7 +61,19 @@ ul li a:hover{
 .productos {
   padding: 2rem 7%;
 }
-
+.navSinPadding{
+  padding-left: 0!Important;
+  padding-right: 0!Important;
+}
+.home{
+  display: flex;
+  background:url(../img/home-img.jpeg) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+  align-items: center;
+  text-align: center;
+}
 .productos .grid-container .box {
   text-align: center;
   border: 0.1rem solid rgba(255, 255, 255, 0.3);
