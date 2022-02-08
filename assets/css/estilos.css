@@ -28,6 +28,9 @@ ul a:hover{
   width: 250px;
   height: 250px;
 }
+.bodyView{
+  height: 70vh;
+}
 /* main div div img{
   width: 150px;
   height: 150px;
@@ -53,6 +56,16 @@ ul a:hover{
 }
 .fondoNosotros{
   background:url(../img/about-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.fondoHistoria1{
+  background:url(../img/historia-1.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.fondoHistoria2{
+  background:url(../img/historia-2.jpeg) no-repeat;
   background-size: cover;
   background-position: center;
 }
