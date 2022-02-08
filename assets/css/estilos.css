@@ -51,6 +51,11 @@ ul a:hover{
   background-size: cover;
   background-position: center;
 }
+.fondoNosotros{
+  background:url(../img/about-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .boton:hover {
   letter-spacing: 0.2rem;
 }
