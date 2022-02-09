@@ -28,9 +28,7 @@ ul a:hover{
   width: 250px;
   height: 250px;
 }
-.bodyView{
-  height: 70vh;
-}
+
 /* main div div img{
   width: 150px;
   height: 150px;
@@ -120,8 +118,12 @@ ul a:hover{
     gap: 1.5rem;
   }
 }
-@media (max-width: 550px){
 
+
+@media (min-width: 305px){
+  .bodyView{
+    height: 70vh;
+  }
 
 }
 
