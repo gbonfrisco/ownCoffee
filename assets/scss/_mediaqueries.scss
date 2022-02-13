@@ -1,0 +1,25 @@
+
+
+
+@media (min-width: 551px){
+    .productos{
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap: 1.5rem;
+        }
+    }
+}
+@media (min-width: 305px){
+    .bodyView{
+      height: 70vh;
+    }
+  
+  }
+  @media (max-width: 767px){
+    .fondo-Us-small{
+      background:url(../img/about-img.jpeg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+  }

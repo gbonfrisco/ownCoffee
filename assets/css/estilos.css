@@ -1,3 +1,130 @@
+/*Esto es un comentario de CSS puro*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
 
+/*IMPORT*/
+ul li a {
+  color: black !important;
+}
+
+.colorPropio {
+  color: #d3ad7f;
+}
+
+.fondoContacto {
+  background: url(../img/home-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.fondoNosotros {
+  background: url(../img/about-img.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.fondoHistoria1 {
+  background: url(../img/historia-1.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.fondoHistoria2 {
+  background: url(../img/historia-2.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 551px) {
+  .productos .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 305px) {
+  .bodyView {
+    height: 70vh;
+  }
+}
+@media (max-width: 767px) {
+  .fondo-Us-small {
+    background: url(../img/about-img.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+/*ANIDAMIENTO*/
+ul a {
+  font-size: 1.1rem;
+}
+ul a:hover {
+  color: #d3ad7f !important;
+}
+
+.imgLogo {
+  width: 250px;
+  height: 250px;
+}
+
+.boton {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #d3ad7f;
+  background: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+.boton:hover {
+  letter-spacing: 0.2rem;
+}
+
+.bordeRojo {
+  border: 2px solid red;
+}
+
+.navSinPadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.home {
+  display: flex;
+  background: url(../img/home-img.jpeg) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+  align-items: center;
+  text-align: center;
+}
+
+.productos {
+  padding: 2rem 7%;
+}
+.productos .grid-container .box {
+  text-align: center;
+  border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  padding: 2rem;
+}
+.productos .grid-container .box .imagen {
+  padding: 2.5rem 0;
+}
+.productos .grid-container .box .imagen img {
+  height: 15rem;
+}
+.productos .grid-container .box .contenido h3 {
+  color: white;
+  font-size: 1.5rem;
+  font: bold;
+}
 
 /*# sourceMappingURL=estilos.css.map */

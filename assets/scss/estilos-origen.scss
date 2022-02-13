@@ -1,0 +1,87 @@
+//Comentario puro SCSS
+/*Esto es un comentario de CSS puro*/
+
+* {
+  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+  }
+  
+/*IMPORT*/
+
+@import "colores";
+@import "fondos";
+@import "mediaqueries";
+
+/*ANIDAMIENTO*/
+
+ul {
+  a {
+    font-size: 1.1rem;
+    &:hover {
+      color: #d3ad7f !important;
+    }
+  }
+}
+
+.imgLogo {
+  width: 250px;
+  height: 250px;
+}
+.boton {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 3rem;
+  font-size: 1.7rem;
+  color: #d3ad7f;
+  background: white;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  &:hover {
+    letter-spacing: 0.2rem;
+  }
+}
+.bordeRojo {
+  border: 2px solid red;
+}
+.navSinPadding {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.home {
+  display: flex;
+  background: url(../img/home-img.jpeg) no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+  align-items: center;
+  text-align: center;
+}
+.productos {
+  padding: 2rem 7%;
+  .grid-container {
+    .box {
+      text-align: center;
+      border: 0.1rem solid rgba(255, 255, 255, 0.3);
+      padding: 2rem;
+      .imagen {
+        padding: 2.5rem 0;
+        img {
+          height: 15rem;
+        }
+      }
+      .contenido {
+        h3 {
+          color: white;
+          font-size: 1.5rem;
+          font: bold;
+        }
+      }
+    }
+  }
+}
