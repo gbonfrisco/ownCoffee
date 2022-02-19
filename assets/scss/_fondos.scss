@@ -1,23 +1,17 @@
 
 
 
-.fondoContacto{
-    background:url(../img/home-img.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
+
+/* EXTEND*/
+
+
+@each $imagen in home, about, historia1, historia2 {
+  .fondo-#{$imagen}{
+    background: url(../img/#{$imagen}.jpeg) no-repeat;
+    @extend .fondoEstandar;
   }
-  .fondoNosotros{
-    background:url(../img/about-img.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .fondoHistoria1{
-    background:url(../img/historia-1.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-  .fondoHistoria2{
-    background:url(../img/historia-2.jpeg) no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
+}
+.fondoEstandar{
+  background-size: cover;
+  background-position: center;
+}

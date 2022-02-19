@@ -13,3 +13,15 @@ ul{
 .colorPropio {
     color: #d3ad7f;
   }
+
+  /*MAPAS*/
+  $mapaColores:(
+      naranja: #d3ad7f,
+      negro: black,
+      blanco: white
+  );
+   @each $nombre, $color in $mapaColores {
+        .color-#{$nombre}{
+            color: $color;
+        }
+   }

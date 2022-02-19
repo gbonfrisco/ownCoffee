@@ -2,16 +2,15 @@
 /*Esto es un comentario de CSS puro*/
 
 * {
-  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-    transition: 0.2s linear;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
 /*IMPORT*/
 
 @import "colores";
@@ -28,17 +27,21 @@ ul {
     }
   }
 }
+/*MIXINS*/
+@mixin tamanio($width, $height) {
+  height: $height;
+  width: $width;
+}
 
 .imgLogo {
-  max-width:200px;
-  max-height:200px;
+  @include tamanio(200px,200px)
 }
 .boton {
   margin-top: 1rem;
   display: inline-block;
   padding: 0.9rem 3rem;
   font-size: 1.7rem;
-  color: #d3ad7f;
+  @extend .color-naranja;
   background: white;
   cursor: pointer;
   border-radius: 0.25rem;
@@ -53,14 +56,20 @@ ul {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
+
+$posicion:(
+  centro: center,
+  tamanioFondo: cover,
+  display: flex
+);
 .home {
-  display: flex;
-  background: url(../img/home-img.jpeg) no-repeat;
+  display: map-get($posicion, display);
+  @extend .fondo-home;
   background-size: cover;
   height: 70vh;
-  background-position: center;
-  align-items: center;
-  text-align: center;
+  background-position: map-get($posicion, centro);;
+  align-items: map-get($posicion, centro);;
+  text-align: map-get($posicion, centro);;
 }
 .productos {
   padding: 2rem 7%;
@@ -77,7 +86,7 @@ ul {
       }
       .contenido {
         h3 {
-          color: white;
+          @extend .color-blanco;
           font-size: 1.5rem;
           font: bold;
         }

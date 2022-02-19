@@ -18,26 +18,37 @@ ul li a {
   color: #d3ad7f;
 }
 
-.fondoContacto {
-  background: url(../img/home-img.jpeg) no-repeat;
-  background-size: cover;
-  background-position: center;
+/*MAPAS*/
+.color-naranja, .boton {
+  color: #d3ad7f;
 }
 
-.fondoNosotros {
-  background: url(../img/about-img.jpeg) no-repeat;
-  background-size: cover;
-  background-position: center;
+.color-negro {
+  color: black;
 }
 
-.fondoHistoria1 {
-  background: url(../img/historia-1.jpeg) no-repeat;
-  background-size: cover;
-  background-position: center;
+.color-blanco, .productos .grid-container .box .contenido h3 {
+  color: white;
 }
 
-.fondoHistoria2 {
-  background: url(../img/historia-2.jpeg) no-repeat;
+/* EXTEND*/
+.fondo-home, .home {
+  background: url(../img/home.jpeg) no-repeat;
+}
+
+.fondo-about {
+  background: url(../img/about.jpeg) no-repeat;
+}
+
+.fondo-historia1 {
+  background: url(../img/historia1.jpeg) no-repeat;
+}
+
+.fondo-historia2 {
+  background: url(../img/historia2.jpeg) no-repeat;
+}
+
+.fondoEstandar, .fondo-home, .home, .fondo-about, .fondo-historia1, .fondo-historia2 {
   background-size: cover;
   background-position: center;
 }
@@ -56,7 +67,7 @@ ul li a {
 }
 @media (max-width: 767px) {
   .fondo-Us-small {
-    background: url(../img/about-img.jpeg) no-repeat;
+    background: url(../img/about.jpeg) no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -69,9 +80,10 @@ ul a:hover {
   color: #d3ad7f !important;
 }
 
+/*MIXINS*/
 .imgLogo {
-  max-width: 200px;
-  max-height: 200px;
+  height: 200px;
+  width: 200px;
 }
 
 .boton {
@@ -79,7 +91,6 @@ ul a:hover {
   display: inline-block;
   padding: 0.9rem 3rem;
   font-size: 1.7rem;
-  color: #d3ad7f;
   background: white;
   cursor: pointer;
   border-radius: 0.25rem;
@@ -99,7 +110,6 @@ ul a:hover {
 
 .home {
   display: flex;
-  background: url(../img/home-img.jpeg) no-repeat;
   background-size: cover;
   height: 70vh;
   background-position: center;
@@ -122,7 +132,6 @@ ul a:hover {
   height: 15rem;
 }
 .productos .grid-container .box .contenido h3 {
-  color: white;
   font-size: 1.5rem;
   font: bold;
 }
