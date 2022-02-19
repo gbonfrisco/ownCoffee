@@ -27,7 +27,7 @@ ul li a {
   color: black;
 }
 
-.color-blanco, .productos .grid-container .box .contenido h3 {
+.color-blanco, .productos .grid-container .box .contenido h2, .productos .grid-container .box .contenido h3 {
   color: white;
 }
 
@@ -132,6 +132,10 @@ ul a:hover {
   height: 15rem;
 }
 .productos .grid-container .box .contenido h3 {
+  font-size: 1.5rem;
+  font: bold;
+}
+.productos .grid-container .box .contenido h2 {
   font-size: 1.5rem;
   font: bold;
 }

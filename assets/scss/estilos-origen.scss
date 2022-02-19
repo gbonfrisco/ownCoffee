@@ -90,6 +90,11 @@ $posicion:(
           font-size: 1.5rem;
           font: bold;
         }
+        h2 {
+          @extend .color-blanco;
+          font-size: 1.5rem;
+          font: bold;
+        }
       }
     }
   }
