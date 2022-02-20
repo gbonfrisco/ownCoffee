@@ -10,11 +10,16 @@
         }
     }
 }
-@media (min-width: 305px){
+@media (min-width: 768px){
     .bodyView{
       height: 70vh;
     }
-  
+  }
+    @media (min-width: 1000px){
+      .bodyViewAboutUs{
+        height: 70vh;
+      }
+    
   }
   @media (max-width: 767px){
     .fondo-Us-small{

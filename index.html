@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords"  content="Cafe, cafe de especialidad, cafe de calidad">
-    <meta name="description" content="Home de Own Coffee, presentacion a la pagina">
+    <meta
+      name="keywords"
+      content="Cafe, cafe de especialidad, cafe de calidad, cafe de especialidad recoleta, cafe de especialidad palermo"
+    />
+    <meta
+      name="description"
+      content="Home de Own Coffee, presentacion a la pagina"
+    />
     <title>Own Coffee</title>
     <!-- Estilos Booststrap online -->
     <link
@@ -15,35 +21,61 @@
     <link rel="stylesheet" href="assets/css/estilos.css" />
   </head>
   <body class="bg-light">
-
     <div class="container-fluid navSinPadding">
       <nav
-        class="navbar navbar-expand-md navbar-light bg-light border-3 bordem-bottom">
-        <div class="container-fluid">
+        class="navbar navbar-expand-md navbar-light bg-light border-3 bordem-bottom"
+      >
+        <div class="container-fluid justify-content-center">
           <a href="index.html" class="navbar-brand">
-            <img src="assets/img/logo.png" class="imgLogo" alt="logo">
+            <!-- <img src="assets/img/logo.png" class="imgLogo" alt="logo"> -->
+            <picture>
+              <source media="(min-width:768px)" srcset="assets/img/logo.png" class="imgLogo" />
+              <source media="(max-width:767px)" srcset="assets/img/logoletras.png" />
+              <img 
+                class="imgLogo"
+                src="assets/img/logo.png"
+                alt="Flowers"
+                style="width: auto"
+              />
+            </picture>
           </a>
-          <button type="button" class="navbar-toggler justify-content-center"data-bs-toggle="collapse"data-bs-target="#menuNavegacion">
+          <button
+            type="button"
+            class="navbar-toggler justify-content-center"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuNavegacion"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div id="menuNavegacion" class="collapse navbar-collapse">
             <ul class="navbar-nav ms-3 text-center m-lg-auto">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="assets/pages/producto.html" class="nav-item nav-link">Productos</a>
-                <a href="assets/pages/sobrenosotros.html" class="nav-item nav-link">Nosotros</a>
-                <a href="assets/pages/historia.html" class="nav-item nav-link">Historia</a>
-                <a href="assets/pages/contacto.html" class="nav-item nav-link">Contacto</a>
+              <a href="index.html" class="nav-item nav-link active">Home</a>
+              <a href="assets/pages/producto.html" class="nav-item nav-link"
+                >Productos</a
+              >
+              <a
+                href="assets/pages/sobrenosotros.html"
+                class="nav-item nav-link"
+                >Nosotros</a
+              >
+              <a href="assets/pages/historia.html" class="nav-item nav-link"
+                >Historia</a
+              >
+              <a href="assets/pages/contacto.html" class="nav-item nav-link"
+                >Contacto</a
+              >
             </ul>
-          </div>  
+          </div>
         </div>
       </nav>
     </div>
 
     <section class="home container-fluid">
       <div class="row border-5">
-        <div
-        class="col-md-6 fs-1 col-sm-12">
-          <h1 class="color-naranja text-center">OWN COFFE: CAFE DE ESPECIALIDAD</h1>
+        <div class="col-md-6 fs-1 col-sm-12">
+          <h1 class="color-naranja text-center">
+            OWN COFFE: CAFE DE ESPECIALIDAD
+          </h1>
           <h2 class="fs-3 text-light text-center">UNITE A LA EXPERIENCIA</h2>
         </div>
         <div class="col-md-6 col-sm-0"></div>
@@ -92,7 +124,7 @@
               /></svg
           ></a>
         </li>
-        
+
         <li class="ms-3">
           <a class="text-muted" href="#"
             ><svg class="bi" width="24" height="24">

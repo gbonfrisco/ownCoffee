@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords"  content="Cafe, llamanos, contacto, cafe de calidad">
+  <meta name="keywords"  content="Cafe, llamanos, contacto, cafe de calidad, telefono, cafe mail, cafe de especialidad mail, cafe de especialidad telefono">
   <meta name="description" content="posibilidad de contactar con las personas detrás de Own Coffee">
   <title>Own Coffee - Contacto</title>
   <!-- Estilos Booststrap online -->
@@ -16,9 +16,20 @@
   <div class="container-fluid navSinPadding">
     <nav
       class="navbar navbar-expand-md navbar-light bg-light border-3 bordem-bottom">
-      <div class="container-fluid">
+      <div class="container-fluid justify-content-center">
         <a href="../../index.html" class="navbar-brand">
-          <img src="../img/logo.png" width="200px" height="200px" alt="logo">
+          <!-- <img src="../img/logo.png" width="200px" height="200px" alt="logo">
+           -->
+           <picture>
+            <source media="(min-width:768px)" srcset="../img/logo.png" class="imgLogo" />
+            <source media="(max-width:767px)" srcset="../img/logoletras.png" />
+            <img 
+              class="imgLogo"
+              src="assets/img/logo.png"
+              alt="Flowers"
+              style="width: auto"
+            />
+          </picture>
         </a>
         <button type="button" class="navbar-toggler justify-content-center"data-bs-toggle="collapse"data-bs-target="#menuNavegacion">
           <span class="navbar-toggler-icon"></span>
@@ -42,7 +53,7 @@
    <div class="row">
      <div class="align-items-center text-center col-md-6 col-xs-12 my-3 fondo-home">
        <h1 class=" h3 color-naranja text-center">Comunicate con nosotros</h1>
-       <p class="text-light text-center fw-bold">Podés llamar al 11.8765.4321</p>
+       <p class="text-light text-center fw-bold">Podes llamar al 11.8765.4321</p>
        <p class="text-light text-center fw-bold">Mail: owncoffee@owncoffee.com.ar</p>
      </div>
      <div class="col-md-6 col-xs-0 my-3 ">
@@ -53,7 +64,7 @@
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput2" class="form-label color-naranja">Telefono</label>
-        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese telefono">
+        <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese telefono">
       </div>
       <div class="mb-3">
         <label for="formGroupExampleInput3" class="form-label color-naranja">Email</label>
@@ -64,7 +75,7 @@
           <textarea class="form-control" placeholder="Deje un comentario aqui" id="floatingTextarea" style="height: 100px"></textarea>
       </div>
       <div class="col-12">
-        <button type="submit" class="btn btn-light">Enviar</button>
+        <button type="submit" class="btn btn-light value="Enviar">Enviar</button>
       </div>
      </div>
    </div>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords"  content="Cafe, cafe de especialidad, historia, cafe de calidad">
+    <meta name="keywords"  content="Cafe, cafe de especialidad, historia, cafe de calidad, historia del cafe de especialidad">
     <meta name="description" content="Detalle de la historia del café de especialidad">
     <title>Own Coffee - Historia</title>
     <!-- Estilos Booststrap online -->
@@ -20,14 +20,20 @@
       <nav
         class="navbar navbar-expand-md navbar-light bg-light border-3 bordem-bottom"
       >
-        <div class="container-fluid">
+        <div class="container-fluid justify-content-center">
           <a href="../../index.html" class="navbar-brand">
-            <img
-              src="../img/logo.png"
-              width="200px"
-              height="200px"
-              alt="logo"
-            />
+            <!-- <img src="../img/logo.png" width="200px" height="200px" alt="logo">
+             -->
+             <picture>
+              <source media="(min-width:768px)" srcset="../img/logo.png" class="imgLogo" />
+              <source media="(max-width:767px)" srcset="../img/logoletras.png" />
+              <img 
+                class="imgLogo"
+                src="assets/img/logo.png"
+                alt="Flowers"
+                style="width: auto"
+              />
+            </picture>
           </a>
           <button
             type="button"

@@ -60,8 +60,13 @@ ul li a {
     gap: 1.5rem;
   }
 }
-@media (min-width: 305px) {
+@media (min-width: 768px) {
   .bodyView {
+    height: 70vh;
+  }
+}
+@media (min-width: 1000px) {
+  .bodyViewAboutUs {
     height: 70vh;
   }
 }
