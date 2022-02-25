@@ -8,6 +8,7 @@
 @each $imagen in home, about, historia1, historia2 {
   .fondo-#{$imagen}{
     background: url(../img/#{$imagen}.jpeg) no-repeat;
+    
     @extend .fondoEstandar;
   }
 }
